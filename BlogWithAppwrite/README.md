@@ -1,5 +1,5 @@
 # Blog App with Appwrite as Backend
 
-# Tools used
+## Tools used
 - react-redux-toolkit
 - react-router-dom
