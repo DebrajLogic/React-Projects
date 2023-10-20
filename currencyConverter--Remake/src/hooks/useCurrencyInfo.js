@@ -6,7 +6,8 @@ function useCurrencyInfo(currency) {
 
   useEffect(() => {
     fetch(
-      `${conf.apiUrl} + ${currency}.json`
+      `${conf.apiUrl}` + `${currency}.json`,
+      console.log('url=', `${conf.apiUrl} + ${currency}.json`)
     )
       .then((response) => response.json())
       .then((data) => setData(data[currency]))

@@ -70,7 +70,7 @@ function App() {
                 onChange={(e) => {
                   setTax(Number(e.target.value));
                 }}
-                className="text-black mr-1 rounded-3xl outline-none"
+                className="text-black py-1 mr-1 rounded-3xl outline-none"
                 name=""
                 id=""
               >
@@ -90,7 +90,7 @@ function App() {
             value={convertedAmount}
             currencySelected={to}
             options={options}
-            disabled={true}
+            disabled
             onCurrencyChange={(e) => {
               setTo(e.target.value);
               setConvertedAmount("");
